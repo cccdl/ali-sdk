@@ -1,0 +1,46 @@
+{
+  "name": "cccdl/ali-sdk",
+  "homepage": "https://github.com/cccdl/ali-sdk",
+  "description": "支付宝 sdk for php",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dl_c",
+      "email": "568078220@qq.com"
+    }
+  ],
+  "keywords": [
+    "cccdl",
+    "ali",
+    "支付宝",
+    "支付宝实名验证",
+    "pay",
+    "alipay",
+    "alipay"
+  ],
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-openssl": "*",
+    "ext-xml": "*",
+    "ext-libxml": "*",
+    "ext-simplexml": "*",
+    "guzzlehttp/guzzle": "^7.3",
+    "ext-bcmath": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "cccdl\\ali\\": "./src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "cccdl\\ali\\Test\\": "./src/Test"
+    }
+  }
+}
