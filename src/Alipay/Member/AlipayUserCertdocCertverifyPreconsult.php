@@ -21,6 +21,7 @@ class AlipayUserCertdocCertverifyPreconsult extends BasicAliPay
     {
         parent::__construct($options);
         $this->options->set('method', 'alipay.user.certdoc.certverify.preconsult');
+        $this->options->set('charset', 'utf-8');
         $this->method = str_replace('.', '_', $this->options['method']) . '_response';
     }
 
