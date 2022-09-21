@@ -171,7 +171,7 @@ abstract class BasicAliPay
      */
     protected function postBody($key = '')
     {
-        $data = $this->post();
+        $data = $this->getPostBody();
 
         if (empty($key)) {
             $key = $this->method;
