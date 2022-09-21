@@ -20,6 +20,7 @@ class AlipayTradeWapPay extends BasicAliPay
 
         parent::__construct($options);
         $this->options->set('method', 'alipay.trade.wap.pay');
+        $this->options->set('charset', 'UTF-8');
     }
 
     /**

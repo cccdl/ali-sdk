@@ -78,7 +78,7 @@ abstract class BasicAliPay
         }
         $this->options = new DataArray([
             'app_id' => $this->config->get('appid'),
-            'charset' => empty($options['charset']) ? 'UTF-8' : $options['charset'],
+            'charset' => empty($options['charset']) ? 'utf-8' : $options['charset'],
             'format' => 'JSON',
             'version' => '1.0',
             'sign_type' => empty($options['sign_type']) ? 'RSA2' : $options['sign_type'],
