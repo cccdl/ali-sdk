@@ -78,7 +78,7 @@ abstract class BasicAliPay
         }
         $this->options = new DataArray([
             'app_id' => $this->config->get('appid'),
-            'charset' => empty($options['charset']) ? 'utf-8' : $options['charset'],
+            'charset' => empty($options['charset']) ? 'UTF-8' : $options['charset'],
             'format' => 'JSON',
             'version' => '1.0',
             'sign_type' => empty($options['sign_type']) ? 'RSA2' : $options['sign_type'],
@@ -126,7 +126,6 @@ abstract class BasicAliPay
         if (empty($str)) {
             $str = $this->getSignContent($this->options->get(), true);
         }
-
         $content = wordwrap($this->trimCert($this->config->get('private_key')), 64, "\n", true);
         $string = "-----BEGIN RSA PRIVATE KEY-----\n$content\n-----END RSA PRIVATE KEY-----";
         if ($this->options->get('sign_type') === 'RSA2') {

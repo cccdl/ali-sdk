@@ -49,7 +49,7 @@ $ composer require cccdl/ali-sdk
 | Alipay\Util\AlipayOpenSystemOauthToken.php              | 换取授权访问令牌                   |
 | Alipay\Authorization\Authorization.php                  | 获取移动app端使用的授权参数infoStr     |
 | Alipay\Pay\AlipayTradeAppPay.php                        | app支付接口2.0【其实是orderStr的生成】 |
-| Alipay\Pay\AlipayTradeWapPay.php                        | 手机网站支付接口2.0【返回html内容】      |
+| Alipay\Pay\AlipayTradeWapPay.php                        | 手机网站支付接口2.0【返回from表单】      |
 | Alipay\Fund\AlipayFundTransUniTransfer.php              | 单笔转账到支付宝账户                 |
 
 ### 快速使用
